@@ -7,5 +7,8 @@ lazy val root = (project in file("."))
     scalaVersion := "2.11.8",
     version      := "0.1-SNAPSHOT",
     fork         := true,
-    parallelExecution := false
+    parallelExecution := false,
+    libraryDependencies := Seq(
+      "com.github.wookietreiber" %% "scala-chart" % "latest.integration"
+    )
   )
